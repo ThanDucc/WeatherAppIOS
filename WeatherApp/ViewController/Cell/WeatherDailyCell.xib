@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherDailyCell" id="Q8Z-n1-1yR" customClass="WeatherDailyCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rNV-Xx-Uvu">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ll-WR-iPn">
+                        <rect key="frame" x="14" y="15" width="107" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz3-vh-zGp">
+                        <rect key="frame" x="15" y="45" width="105" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-dx-Ydr">
+                        <rect key="frame" x="10" y="163" width="115" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aY4-Dz-Ghy">
+                        <rect key="frame" x="37.5" y="78" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="VZC-sr-mS3"/>
+                            <constraint firstAttribute="width" secondItem="aY4-Dz-Ghy" secondAttribute="height" multiplier="1:1" id="cS8-7e-lZq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.0019956310109999998" green="0.89474530890000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Xz3-vh-zGp" firstAttribute="top" secondItem="1ll-WR-iPn" secondAttribute="top" constant="30" id="2vQ-p3-Mj0"/>
+                    <constraint firstAttribute="trailing" secondItem="1ll-WR-iPn" secondAttribute="trailing" constant="14" id="59x-p0-XeV"/>
+                    <constraint firstAttribute="trailing" secondItem="wO7-dx-Ydr" secondAttribute="trailing" constant="10" id="60J-Wk-p6w"/>
+                    <constraint firstItem="Xz3-vh-zGp" firstAttribute="leading" secondItem="rNV-Xx-Uvu" secondAttribute="leading" constant="15" id="QMz-Tr-2nk"/>
+                    <constraint firstAttribute="bottom" secondItem="wO7-dx-Ydr" secondAttribute="bottom" constant="10" id="SlI-de-g2E"/>
+                    <constraint firstAttribute="trailing" secondItem="Xz3-vh-zGp" secondAttribute="trailing" constant="15" id="TKP-hy-Wo2"/>
+                    <constraint firstItem="aY4-Dz-Ghy" firstAttribute="top" secondItem="Xz3-vh-zGp" secondAttribute="bottom" constant="10" id="h1o-o8-gDj"/>
+                    <constraint firstItem="1ll-WR-iPn" firstAttribute="top" secondItem="rNV-Xx-Uvu" secondAttribute="top" constant="15" id="hej-Pa-HRK"/>
+                    <constraint firstItem="wO7-dx-Ydr" firstAttribute="leading" secondItem="rNV-Xx-Uvu" secondAttribute="leading" constant="10" id="uxl-BV-Ljv"/>
+                    <constraint firstItem="1ll-WR-iPn" firstAttribute="leading" secondItem="rNV-Xx-Uvu" secondAttribute="leading" constant="14" id="uyq-D6-QDB"/>
+                    <constraint firstItem="aY4-Dz-Ghy" firstAttribute="centerX" secondItem="rNV-Xx-Uvu" secondAttribute="centerX" id="yR8-0b-qCu"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="135" height="190"/>
+            <connections>
+                <outlet property="conditionIconImage" destination="aY4-Dz-Ghy" id="J2O-qn-xfD"/>
+                <outlet property="temperatureLabel" destination="Xz3-vh-zGp" id="59q-g3-Q2i"/>
+                <outlet property="timeLabel" destination="1ll-WR-iPn" id="vNb-Jz-uBS"/>
+                <outlet property="windSpeedLabel" destination="wO7-dx-Ydr" id="Aom-mw-J8L"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="-38.169642857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>
